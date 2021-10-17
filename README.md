@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/MomenBaligh/tip-splitter](https://github.com/MomenBaligh/tip-splitter)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://tip-splitter-momenbaligh.vercel.app/](https://tip-splitter-momenbaligh.vercel.app/)
 
 ## My process
 
