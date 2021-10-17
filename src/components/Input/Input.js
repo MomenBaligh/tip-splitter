@@ -51,6 +51,7 @@ export class BillInput extends Component {
           ''
         )}
         <input
+          type="number"
           id="bill-input"
           placeholder={this.props.placeholder}
           value={this.state.value}

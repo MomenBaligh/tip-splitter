@@ -16,15 +16,17 @@ export class TipSelector extends Component {
   radioButtons = () =>
     this.props.tips.map((item, index) => {
       return (
-        <div key={index} className="radio-button">
+        <div
+          key={index}
+          className={`radio-button ${
+            index === this.state.activeRadio ? 'selected' : 'not-selected'
+          }`}
+        >
           <label htmlFor={`tip-percent-${item}`}>
             <input
               type="radio"
               name="tip"
               id={`tip-percent-${item}`}
-              className={
-                index === this.state.activeRadio ? 'selected' : 'not-selected'
-              }
               value={item}
               onClick={e => {
                 console.log(e.target.value);
@@ -60,6 +62,7 @@ export class TipSelector extends Component {
         <div className="tip-buttons">
           {this.radioButtons()}
           <Input
+            type="number"
             placeholder="custom"
             containerFunction={() => this.setState({ activeRadio: null })}
             action={this.onTipPercentChange}

@@ -43,8 +43,9 @@ export class App extends Component {
         </div>
         <div className="card">
           <div className="input">
-            <div>
+            <div className="bill-container">
               <Input
+                type="number"
                 className="bill"
                 label="Bill"
                 placeholder="0"
@@ -53,7 +54,7 @@ export class App extends Component {
                 resetValue={this.state.defaultValues[0]}
               />
 
-              <div>
+              <div className="dollar-icon">
                 <img src={dollarIcon} alt="dollar icon" />
               </div>
             </div>
@@ -67,9 +68,10 @@ export class App extends Component {
               childResetValue={this.state.defaultValues[2]}
             />
 
-            <div>
+            <div className="people-container">
               <div>
                 <Input
+                  type="number"
                   className="people"
                   label="Number of People"
                   placeholder="1"
@@ -77,7 +79,7 @@ export class App extends Component {
                   reset={this.state.isReset}
                   resetValue={this.state.defaultValues[3]}
                 />
-                <div>
+                <div className="person-icon">
                   <img src={personIcon} alt="person icon" />
                 </div>
               </div>
